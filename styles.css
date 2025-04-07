@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
+}
