@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'Heebo';
-    src: url('./fonts/Heebo-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
+  font-family: 'Heebo';
+  src: url('./fonts/Heebo-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
 }
 
 @font-face {
-    font-family: 'Heebo';
-    src: url('./fonts/Heebo-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
+  font-family: 'Heebo';
+  src: url('./fonts/Heebo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
 }
 
 @font-face {
-    font-family: 'Yantramanav';
-    src: url('./fonts/Yantramanav-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
+  font-family: 'Yantramanav';
+  src: url('./fonts/Yantramanav-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; /* этот дескриптор отвечает за правило отрисовки текста если файл шрифта не будет загружен */
 }
 
 /**
@@ -28,24 +28,24 @@
  *,
  ::before,
  ::after {
-   box-sizing: border-box;
+  box-sizing: border-box;
  }
  
  /**
-   Убираем внутренние отступы слева тегам списков,
-   у которых есть атрибут class
+  убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
   */
  :where(ul, ol):where([class]) {
-   padding-left: 0;
+  padding-left: 0;
  }
  
  /**
-   Убираем внешние отступы body и двум другим тегам,
-   у которых есть атрибут class
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
   */
  body,
  :where(blockquote, figure):where([class]) {
-   margin: 0;
+  margin: 0;
  }
  
  /**
@@ -394,4 +394,26 @@
   .header-menu-link {
     height: 50px;
   }
- }
+}
+
+@media (max-width: 767px) {
+  .button {
+    padding-inline: 22px;
+  }
+
+  .header {
+    padding-top: 10px;
+  }
+
+  .header-menu-list {
+    column-gap: 24px;
+  }
+
+  .header-menu-link {
+    height: 32px;
+  }
+
+  .header-actions {
+    column-gap: 15px;
+  }
+}
